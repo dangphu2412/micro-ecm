@@ -1,0 +1,18 @@
+{
+  "name": "@workspace/root",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "lerna run start",
+    "build": "lerna run build",
+    "dev": "lerna run dev",
+    "test": "lerna run test",
+    "publish": "lerna run build && lerna publish"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "17.0.23",
+    "lerna": "^4.0.0",
+    "typescript": "4.6.3"
+  }
+}
