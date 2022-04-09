@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@micro-ecm/utils": "^1.0.1",
+    "@micro-ecm/utils": "^1.0.2",
     "express": "^4.17.3"
   },
   "keywords": [],
