@@ -1,7 +1,7 @@
 {
   "name": "@workspace/root",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "start": "lerna run start",
     "build": "lerna run build",
