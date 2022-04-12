@@ -1,15 +1,19 @@
+import 'reflect-metadata';
+import { DefaultEcmConfig } from './config/default-config';
+import { CoreMetadata } from './constant/metadata.constant';
+import { EcmConfig } from './config/ecm-config';
+import { ReflectorUtils } from '@micro-ecm/utils';
+import {  } from 'path';
+
 export class EcmBootstrap {
-    // constructor(injector) {
-    //     this.injector = injector;
-    //     this.bootstrap();
-    // }
-    // bootstrap() {
-    //     const bootstrapComponents = [
-    //         EcmMainComponent
-    //     ];
-    //     const appRef = this.injector.get(ApplicationRef);
-    //     const componentFactoryResolver = this.injector.get(ComponentFactoryResolver);
-    //     const componentFactory = componentFactoryResolver.resolveComponentFactory(EcmMainComponent);
-    //     const componentRef = appRef.bootstrap(componentFactory);
-    // }
+  constructor(private readonly config = DefaultEcmConfig) {}
+
+  public bootstrap(): void {
+    const config: EcmConfig = {
+      ...ReflectorUtils.getRequiredMetadata(CoreMetadata.AUTO_CONFIG, DefaultEcmConfig),
+      ...ReflectorUtils.getRequiredMetadata(CoreMetadata.AUTO_CONFIG, this.config),
+    };
+
+    console.log('ECM bootstrap');
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@micro-ecm/core",
+  "name": "microservices",
   "version": "1.0.0",
   "description": "> TODO: description",
   "author": "jackdang <dangphu241299@gmail.com>",
@@ -18,17 +18,9 @@
     "url": "git+https://github.com/dangphu2412/micro-ecm.git"
   },
   "scripts": {
-    "build": "tsc"
+    "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
     "url": "https://github.com/dangphu2412/micro-ecm/issues"
-  },
-  "dependencies": {
-    "@micro-ecm/common": "^1.0.0",
-    "@micro-ecm/utils": "^1.0.2",
-    "express": "^4.17.3"
-  },
-  "peerDependencies": {
-    "express": "^4.17.3"
   }
 }
