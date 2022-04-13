@@ -17,8 +17,8 @@
   },
   "dependencies": {
     "@micro-ecm/common": "1.0.4",
+    "@micro-ecm/core": "^1.0.5",
     "@micro-ecm/utils": "1.0.6",
-    "@micro-ecm/core": "1.0.5",
     "reflect-metadata": "0.1.13",
     "rimraf": "3.0.2"
   },

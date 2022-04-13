@@ -1,1 +1,3 @@
-import { ArrayUtils } from '@micro-ecm/utils';
+import { EcmBootstrap } from '@micro-ecm/core';
+
+new EcmBootstrap().bootstrap();
