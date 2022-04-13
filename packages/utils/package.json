@@ -18,5 +18,7 @@
   },
   "scripts": {
     "build": "tsc"
+  },
+  "dependencies": {
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "microservices",
+  "name": "@ecm/microservices",
   "version": "1.0.0",
   "description": "> TODO: description",
   "author": "jackdang <dangphu241299@gmail.com>",
@@ -22,5 +22,8 @@
   },
   "bugs": {
     "url": "https://github.com/dangphu2412/micro-ecm/issues"
+  },
+  "dependencies": {
+    "axios": "^0.26.1"
   }
 }

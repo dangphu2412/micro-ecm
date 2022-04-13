@@ -22,5 +22,7 @@
   },
   "bugs": {
     "url": "https://github.com/dangphu2412/micro-ecm/issues"
+  },
+  "dependencies": {
   }
 }

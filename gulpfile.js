@@ -1,8 +1,16 @@
-var gulp = require("gulp");
-var ts = require("gulp-typescript");
+'use strict';
+/**
+ * Load the TypeScript compiler, then load the TypeScript gulpfile which simply loads all
+ * the tasks. The tasks are really inside tools/gulp/tasks.
+ */
 
-var tsProject = ts.createProject("tsconfig.json");
+const path = require('path');
 
-gulp.task("default", function () {
-  return tsProject.src().pipe(tsProject()).js.pipe(gulp.dest("dist"));
+const projectDir = __dirname;
+const tsconfigPath = path.join(projectDir, 'tools/gulp/tsconfig.json');
+
+require('ts-node').register({
+  project: tsconfigPath
 });
+
+require('./tools/gulp/gulpfile');
