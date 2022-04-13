@@ -1,6 +1,6 @@
 {
   "name": "@micro-ecm/core",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "> TODO: description",
   "author": "jackdang <dangphu241299@gmail.com>",
   "homepage": "https://github.com/dangphu2412/micro-ecm#readme",
@@ -27,11 +27,11 @@
     "url": "https://github.com/dangphu2412/micro-ecm/issues"
   },
   "dependencies": {
-    "@micro-ecm/utils": "^1.0.5",
+    "@micro-ecm/utils": "^1.0.6",
     "express": "4.17.3"
   },
   "devDependencies": {
-    "@micro-ecm/common": "^1.0.3"
+    "@micro-ecm/common": "^1.0.4"
   },
   "peerDependencies": {
     "@micro-ecm/common": "1.0.0",
