@@ -1,6 +1,6 @@
 {
   "name": "@micro-ecm/common",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "> TODO: description",
   "author": "jackdang <dangphu241299@gmail.com>",
   "homepage": "https://github.com/dangphu2412/micro-ecm#readme",
@@ -22,7 +22,5 @@
   },
   "bugs": {
     "url": "https://github.com/dangphu2412/micro-ecm/issues"
-  },
-  "dependencies": {
   }
 }
