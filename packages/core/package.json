@@ -4,7 +4,7 @@
   "description": "> TODO: description",
   "author": "jackdang <dangphu241299@gmail.com>",
   "homepage": "https://github.com/dangphu2412/micro-ecm#readme",
-  "license": "ISC",
+  "license": "MIT",
   "main": "lib/index.js",
   "directories": {
     "lib": "lib",
@@ -34,8 +34,8 @@
     "@micro-ecm/common": "^1.0.4"
   },
   "peerDependencies": {
-    "@micro-ecm/common": "1.0.0",
-    "@micro-ecm/utils": "1.0.2",
+    "@micro-ecm/common": "1.0.4",
+    "@micro-ecm/utils": "1.0.6",
     "express": "4.17.3"
   },
   "gitHead": "9421a2e5effb24cc541e187f20cb2b37d5f0d558"

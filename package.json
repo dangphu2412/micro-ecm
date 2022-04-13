@@ -5,9 +5,9 @@
   "license": "MIT",
   "scripts": {
     "clean": "gulp clean:bundle",
+    "postbuild:dev": "gulp move",
     "build:dev": "gulp build --dist node_modules/@micro-ecm",
     "prebuild:prod": "npm run clean",
-    "postbuild": "gulp move",
     "build:prod": "gulp build",
     "test": "lerna run test",
     "publish": "lerna publish"

@@ -1,7 +1,7 @@
 {
-  "name": "nest-typescript-starter",
+  "name": "micro-ecm-typescript-starter",
   "version": "1.0.0",
-  "description": "Nest TypeScript starter repository",
+  "description": "Micro-ecm TypeScript starter repository",
   "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",
@@ -16,7 +16,9 @@
     "test:e2e": "jest --config ./e2e/jest-e2e.json"
   },
   "dependencies": {
-    "@micro-ecm/utils": "1.0.2",
+    "@micro-ecm/common": "1.0.4",
+    "@micro-ecm/utils": "1.0.6",
+    "@micro-ecm/core": "1.0.5",
     "reflect-metadata": "0.1.13",
     "rimraf": "3.0.2"
   },
@@ -25,6 +27,11 @@
     "@types/jest": "27.4.1",
     "@types/node": "16.11.26",
     "@types/supertest": "2.0.11",
+    "@typescript-eslint/eslint-plugin": "4.33.0",
+    "@typescript-eslint/parser": "4.33.0",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.25.4",
     "jest": "27.5.1",
     "prettier": "2.5.1",
     "supertest": "6.1.6",
@@ -32,11 +39,6 @@
     "ts-loader": "9.2.8",
     "ts-node": "10.4.0",
     "tsconfig-paths": "3.11.0",
-    "@typescript-eslint/eslint-plugin": "4.33.0",
-    "@typescript-eslint/parser": "4.33.0",
-    "eslint": "7.32.0",
-    "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-import": "2.25.4",
     "typescript": "4.3.5"
   },
   "jest": {
