@@ -1,5 +1,5 @@
 {
-  "name": "@ecm/microservices",
+  "name": "@micro-ecm/microservices",
   "version": "1.0.3",
   "description": "> TODO: description",
   "author": "jackdang <dangphu241299@gmail.com>",
@@ -21,10 +21,10 @@
     "access": "public"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "build": "tsc"
   },
   "bugs": {
     "url": "https://github.com/dangphu2412/micro-ecm/issues"
   },
-  "gitHead": "2ed88ac088c870dba602a667b0487501f5fdb6ed"
+  "gitHead": "9421a2e5effb24cc541e187f20cb2b37d5f0d558"
 }
