@@ -24,6 +24,5 @@
     "url": "https://github.com/dangphu2412/micro-ecm/issues"
   },
   "dependencies": {
-    "axios": "^0.26.1"
   }
 }

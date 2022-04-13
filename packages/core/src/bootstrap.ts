@@ -3,7 +3,6 @@ import { DefaultEcmConfig } from './config/default-config';
 import { CoreMetadata } from './constant/metadata.constant';
 import { EcmConfig } from './config/ecm-config';
 import { ReflectorUtils } from '@micro-ecm/utils';
-import {  } from 'path';
 
 export class EcmBootstrap {
   constructor(private readonly config = DefaultEcmConfig) {}

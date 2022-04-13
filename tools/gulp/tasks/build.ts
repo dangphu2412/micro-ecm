@@ -1,17 +1,23 @@
 import { ROOT_PACKAGE_PATH } from './../config';
 import { task, watch, series, dest } from 'gulp';
-import { createProject } from 'gulp-typescript';
+import { createProject, Project } from 'gulp-typescript';
 import * as log from 'fancy-log';
-import * as sourcemaps from 'gulp-sourcemaps';
 
-const packages = {
-  core: createProject('packages/core/tsconfig.json'),
-  common: createProject('packages/common/tsconfig.json'),
-  utils: createProject('packages/utils/tsconfig.json'),
-  microservices: createProject('packages/microservices/tsconfig.json'),
+const packages: Map<string, Project> = new Map(
+    [
+      ['common', createProject('packages/common/tsconfig.json')],
+      ['utils', createProject('packages/utils/tsconfig.json')],
+      ['core', createProject('packages/core/tsconfig.json')],
+      ['microservices', createProject('packages/microservices/tsconfig.json')]
+  ],
+)
+
+const modules: string[] = [];
+
+for (const packageName of packages.keys()) {
+  modules.push(packageName);
 }
-
-const modules = Object.keys(packages);
+  
 
 /**
  * TODO: 
@@ -33,39 +39,20 @@ function streamingBuild() {
   });
 }
 
-/**
- * Builds the given package
- * @param packageName The name of the package
- */
- function buildPackage(packageName: string) {
-  return packages[packageName]
+function buildPackage(packageName: string) {
+  log(`Building ${packageName} to ${distPath}/${packageName}`);
+  if (!packages.has(packageName)) {
+    throw new Error(`Package ${packageName} does not exist`);
+  }
+  return (<Project> packages.get(packageName))
     .src()
-    .pipe(packages[packageName]())
-    .pipe(dest(`${distPath}/${packageName}`));
-}
-
-/**
- * Builds the given package and adds sourcemaps
- * @param packageName The name of the package
- */
-function buildPackageDev(packageName: string) {
-  return packages[packageName]
-    .src()
-    .pipe(sourcemaps.init())
-    .pipe(packages[packageName]())
-    .pipe(
-      sourcemaps.mapSources(
-        (sourcePath: string) => './' + sourcePath.split('/').pop(),
-      ),
-    )
-    .pipe(sourcemaps.write('.', {}))
-    .pipe(dest(`${distPath}/${packageName}`));
+    .pipe((<Project> packages.get(packageName))())
+    .pipe(dest(`${distPath}/${packageName}/lib`));
 }
 
 function buildPackages(names: string[]) {
   names.forEach(packageName => {
     task(packageName, () => buildPackage(packageName));
-    task(`${packageName}:dev`, () => buildPackageDev(packageName));
   });
 }
 

@@ -16,6 +16,7 @@
     "test:e2e": "jest --config ./e2e/jest-e2e.json"
   },
   "dependencies": {
+    "@micro-ecm/utils": "1.0.2",
     "reflect-metadata": "0.1.13",
     "rimraf": "3.0.2"
   },
