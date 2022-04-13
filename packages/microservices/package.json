@@ -17,11 +17,14 @@
     "type": "git",
     "url": "git+https://github.com/dangphu2412/micro-ecm.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
     "url": "https://github.com/dangphu2412/micro-ecm/issues"
   },
-  "gitHead": "6219a00cca18cc06f6a4ac9b553ae0b562575d1a"
+  "gitHead": "2ed88ac088c870dba602a667b0487501f5fdb6ed"
 }

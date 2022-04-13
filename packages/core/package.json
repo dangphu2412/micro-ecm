@@ -13,6 +13,9 @@
   "files": [
     "lib"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dangphu2412/micro-ecm.git"
@@ -35,5 +38,5 @@
     "@micro-ecm/utils": "1.0.2",
     "express": "4.17.3"
   },
-  "gitHead": "6219a00cca18cc06f6a4ac9b553ae0b562575d1a"
+  "gitHead": "2ed88ac088c870dba602a667b0487501f5fdb6ed"
 }
