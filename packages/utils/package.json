@@ -18,5 +18,6 @@
   },
   "scripts": {
     "build": "tsc"
-  }
+  },
+  "gitHead": "6219a00cca18cc06f6a4ac9b553ae0b562575d1a"
 }
