@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": false,
   "license": "MIT",
+  "author": "Justin Dang",
   "scripts": {
     "clean": "gulp clean:bundle",
     "postbuild:dev": "gulp move",
